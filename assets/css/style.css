@@ -1,0 +1,321 @@
+body {
+	margin: 0;
+	font-family: 'Noto Serif', serif;
+	/*background: #333;*/
+	color: white;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.content-wrap > h1 {
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 60px;
+	color: black;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+img.mern-img {
+	width: 2000px;
+	height: auto;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+.btn {
+	display: inline-block;
+	width: 80px;
+	/*background: #333;*/
+	color: white;
+	padding: 1em 2em;
+	margin: .5em 0;
+	/*text-decoration: none;*/
+	/*border: 1px solid #666;*/
+
+}
+
+/*.btn:hover {
+	background: #eaeaea;
+	color: #333;
+}*/
+
+#showcase {
+	min-height: 450px;
+	/*color: white;*/
+	text-align: center;
+
+}
+
+#showcase .bg-image {
+	position: absolute;
+	/*background: #333 url("../../assets/images/001.jpg");*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.7;
+}
+
+#showcase h1 {
+	padding-top: 60px;
+	padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+	padding: 0 1.5em;
+}
+
+#section-a {
+	background: #eaeaea;
+	color: #333;
+	padding-bottom: 2em;
+}
+
+.content-wrap > img {
+	width: 80px;
+	height: auto;
+	display: inline;
+}
+
+#section-b {
+	padding: 1em 1em 1em;
+
+}
+
+#section-b ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#section-b li {
+	margin-bottom: 0;
+	background: white;
+	color: #333;
+}
+
+.card-content {
+	padding: 1.5em;
+}
+
+#section-c {
+	background: white;
+	color: black;
+	padding: 2em;
+}
+
+#section-d .box{
+	padding: 2em;
+	color: white;
+}
+
+#section-d {
+	background: #1F5B60;
+}
+
+form {
+  width: 70%;
+  margin: 10% auto;
+	margin-bottom: 20px;
+  min-width: 9rem;
+}
+
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.captcha {
+  float:left;
+  input {
+    float: right;
+  }
+  input[name=question] {
+    width: 4rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: right;
+    padding-right: 0;
+  }
+  [name=captcha] {
+    width: 5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0.5rem;
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}
+
+.icon {
+	display: inline-block;
+	width: 80px;
+	height: auto;
+}
+
+#main-footer {
+	padding: 2em;
+	background: black;
+	color: #fff;
+	text-align: center;
+}
+
+#main-footer a {
+	color: blue;
+	text-decoration: none;
+}
+
+@media(min-width: 700px){
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+
+	#section-a .content-text {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+	#section-a .content-text p {
+		padding-top: 0;
+	}
+
+
+	.content-wrap, #section-b ul {
+		grid-column: 2/4;
+	}
+
+	.box, #section-d, #main-footer div {
+		grid-column: span 2;
+	}
+
+	#section-b ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#section-b li {
+		width: 31%;
+	}
+
+	#section-d .box {
+		grid-column: 2/4;
+	}
+
+	#main-footer div {
+		grid-column: 2/4;
+	}
+
+	.icon {
+		width: 80px;
+		height: auto;
+	}
+}
+
+/*------ -----*/
+
+#photos {
+  opacity: .98;
+}
+
+#photos img {
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 980px;
+  text-align: center;
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-bottom: -50px;
+  padding: 5px 0;
+  transition: box-shadow 0.5s ease;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 22px;
+}
+
+nav a:hover {
+  background: yellow;
+}
+
+/* Sticky Navigation */
+.navScrolled {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 1px 5px #000;
+}
